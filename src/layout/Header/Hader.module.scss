@@ -1,0 +1,148 @@
+.headerSection {
+  width: 100%;
+  background-image: url("../../assets/images/headerBackground.jpg");
+  background-size: auto;
+}
+
+.headerSectionShadow {
+  content: "";
+  padding: 40px 20px 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(31, 39, 50, 0.81);
+  box-sizing: border-box;
+}
+
+.headerUpperBlock {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 40px;
+
+  & button {
+    padding: 0 71px;
+    font-size: 22px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+
+.navBarBlock {
+  border-top: 1px solid #4e555f;
+  border-bottom: 1px solid #4e555f;
+  align-items: center;
+  height: 130px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  & div{
+    margin: 0  auto;
+  }
+}
+
+.linksHeader {
+  padding: 0 0 0 20px;
+  font-size: 22px;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+
+  & h3 {
+    color: #ffffff;
+  }
+}
+
+.headerContactInfo {
+  padding: 0 20px 0 0;
+  display: flex;
+  justify-content: flex-end;
+
+  & h5 {
+    font-size: 18px;
+    margin: 0;
+    color: #d1b06b;
+  }
+
+  & h6 {
+    font-size: 22px;
+    color: #fff;
+  }
+
+  & img {
+    margin: 0 0 0 50px;
+  }
+}
+
+
+.connectInfo {
+  margin: 0 0 0 12px;
+}
+
+.headerInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px 20px;
+  box-sizing: border-box;
+}
+
+.headerDescription {
+  display: flex;
+  grid-gap: 16px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+
+  & img {
+    width: 95px;
+  }
+
+  & h5 {
+    font-size: 65px;
+    margin: 14px 0 21px 0;
+    line-height: 78px;
+    color: #fff;
+    letter-spacing: 0.4px;
+    font-family: "Cormorant Garamond", serif;
+  }
+
+  & h3 {
+    font-size: 22px;
+    margin: 0 0 28px;
+    color: #d1b06b;
+    font-family: "Outfit", sans-serif;
+  }
+
+  & button {
+    background-color: #d1b06b;
+    width: 269px;
+    height: 85px;
+    border: none;
+    font-size: 22px;
+    font-family: "Outfit", sans-serif;
+  }
+}
+
+.headerPerson {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 1200px) {
+  .headerUpperBlock {
+    align-items: center;
+    flex-direction: column;
+
+    & button {
+      height: 80px;
+      margin-top: 30px;
+    }
+  }
+
+  .linksHeader {
+    display: none;
+  }
+  .headerPerson {
+    display: none;
+  }
+}

@@ -1,0 +1,99 @@
+.sectionProduce {
+  display: flex;
+  width: 100%;
+  grid-gap: 30px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 140px 40px 110px;
+}
+
+.produceImageBlock img {
+  margin: 0 0 30px 0;
+  display: flex;
+  text-align: right;
+}
+
+.produceDescription {
+ & h3 {
+    margin: 0 0 11px 0;
+    line-height: 60px;
+    color: #fff;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 45px;
+    font-weight: 400;
+  }
+  & > p {
+    margin: 40px 0 35px 0;
+    width: 825px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+  }
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  & img {
+    width: 90px;
+    object-fit: cover;
+    margin: 0 20px 45px 0;
+    height: 90px;
+  }
+  & h2 {
+    color: #fff;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+  }
+}
+
+.mainBlockButtons {
+  display: flex;
+}
+
+.successButton {
+  width: 315px;
+  height: 126px;
+  background-color: #3b434e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 35px 50px;
+  margin: 0 30px 0 0;
+  & img {
+    width: 58px;
+    height: 56px;
+  }
+  & p {
+    font-size: 22px;
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    color: #fff;
+  }
+}
+
+.experienceButton {
+  width: 315px;
+  height: 126px;
+  background-color: #d1b06b;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 35px 50px;
+  & p {
+    font-size: 22px;
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+.produceImageBlock{
+  display: none;
+}
+  .produceDescription{
+    margin: 0 auto;
+  }
+}

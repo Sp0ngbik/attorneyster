@@ -1,0 +1,88 @@
+.mainDescription {
+  display: flex;
+  padding: 0 40px 0;
+  margin: 30px 0 0 0;
+
+  & > p {
+    color: #fff;
+    width: 660px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 400;
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+  }
+}
+
+
+.descriptionTitle > h2 {
+  font-size: 45px;
+  margin: 0 0 11px 0;
+  font-family: "Cormorant Garamond", serif;
+  color: #fff;
+}
+
+.descriptionText {
+  margin: 60px 0 0 0;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  padding: 0 45px;
+
+  & > div {
+    padding: 55px 50px 70px;
+    background-color: #1f2732;
+  }
+
+  & h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 35px;
+    color: #fff;
+  }
+
+  & p {
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    margin: 0;
+    color: #fff;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #4e555f;
+  }
+}
+
+.blockButton {
+  display: flex;
+  justify-content: space-between;
+  margin: 38px 0 0 0;
+
+  & button {
+    width: 187px;
+    height: 58px;
+    background-color: #161d27;
+    color: #fff;
+    border: none;
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mainDescription {
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+
+    > p {
+      margin-top: 10px;
+    }
+  }
+  .descriptionText{
+    grid-template-columns: 1fr;
+  }
+}
+
