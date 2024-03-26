@@ -1,0 +1,121 @@
+.contactInformationWrapper {
+  gap: 102px;
+  padding: 100px 40px;
+  background-color: #161d27;
+  display: flex;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+  & h2 {
+    font-family: "Cormorant Garamond", serif;;
+    line-height: 58px;
+    font-size: 45px;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 0.4px;
+  }
+
+  & p {
+    font-family: "Outfit", serif;;
+    font-size: 20px;
+    margin: 0;
+    color: #d7d7d7;
+  }
+
+  & button:last-child {
+    margin: 37px 0 0 0;
+    max-width: 257px;
+    width: 100%;
+    height: 85px;
+    font-family: "Outfit", serif;;
+    color: #1f2732;
+    background-color: #d1b06b;
+    font-size: 22px;
+    border: none;
+  }
+}
+
+
+.contactDescription {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  & img {
+    width: 95px;
+    margin: 9px 0 53px;
+  }
+}
+
+.consultationInfo {
+  background-color: #fff;
+  padding: 40px;
+  outline: 15px solid #d7d7d7;
+  outline-offset: -40px;
+
+  & > div {
+    padding: 0 84px 0 55px;
+  }
+
+  & h3 {
+    padding: 65px 0 0 0;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;;
+    font-size: 42px;
+  }
+
+  & p {
+    font-family: "Outfit", serif;;
+    font-size: 20px;
+    color: #909090;
+  }
+}
+
+.callContacts {
+  margin: 37px 0 75px 0;
+  display: flex;
+
+  & button {
+    border: none;
+    height: 70px;
+    width: 70px;
+    background-color: #d1b06b;
+  }
+
+  & p {
+    margin: 0 0 0 15px;
+    color: #1f2732;
+    font-family: "Outfit", serif;;
+    font-size: 18px;
+  }
+
+  & span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .contactInformationWrapper {
+    flex-direction: column;
+    padding: 102px 20px;
+  }
+  .callContacts {
+    flex-direction: column;
+    margin: 20px 0  ;
+    & p{
+      margin: 10px 0;
+    }
+  }
+  .consultationInfo {
+    padding: 0;
+    outline: none;
+    & h3{
+      text-align: left;
+    }
+    > div{
+      padding: 0 20px;
+    }
+
+  }
+}
