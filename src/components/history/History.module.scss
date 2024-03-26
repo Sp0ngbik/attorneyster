@@ -1,0 +1,126 @@
+.historyContent {
+  background-color: rgba(31, 39, 50, 0.85);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 60px 70px;
+
+  & h2 {
+    margin: 0;
+    font-size: 45px;
+    color: #fff;
+    line-height: 58px;
+    font-family: "Cormorant Garamond", serif;
+  }
+}
+
+.historyDecription {
+  width: 418px;
+
+  & img {
+    margin: 11px 0 50px;
+  }
+
+  & h5 {
+    font-family: "Outfit", serif;
+    color: #d1b06b;
+    font-size: 20px;
+  }
+
+  & h6 {
+    font-family: "Outfit", serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin: 13px 0 35px;
+  }
+}
+
+.historyStats img {
+  margin: 11px 0 43px;
+}
+
+.historyStatsContent {
+  width: 382px;
+
+  & h5 {
+    font-family: "Outfit", serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+  }
+
+  & button {
+    width: 302px;
+    color: #000;
+    height: 85px;
+    background-color: #d1b06b;
+    font-size: 22px;
+  }
+}
+
+.historyCases {
+  font-family: "Outfit", serif;
+  font-size: 20px;
+  color: #fff;
+  margin: 39px 0 50px;
+
+  & div {
+    display: flex;
+    margin: 0 0 30px;
+    justify-content: space-between;
+  }
+}
+
+.divorceCase:after {
+  content: "";
+  position: absolute;
+  margin: 42px 0 0 0;
+  width: 383px;
+  display: flex;
+  height: 5px;
+  background: linear-gradient(to right, #d1b06b 75%, #fff 25%);
+}
+
+.propertyCase:after {
+  content: "";
+  position: absolute;
+  margin: 42px 0 0 0;
+  width: 383px;
+  display: flex;
+  height: 5px;
+  background: linear-gradient(to right, #d1b06b 80%, #fff 20%);
+}
+
+.bankingCases:after {
+  content: "";
+  position: absolute;
+  margin: 42px 0 0 0;
+  width: 383px;
+  display: flex;
+  height: 5px;
+  background: linear-gradient(to right, #d1b06b 75%, #fff 25%);
+}
+
+.accidentCases:after {
+  content: "";
+  position: absolute;
+  margin: 42px 0 0 0;
+  width: 383px;
+  display: flex;
+  height: 5px;
+  background: linear-gradient(to right, #d1b06b 90%, #fff 10%);
+}
+
+@media screen and (max-width: 1300px) {
+  .historyContent {
+    background-color: #0b0f10;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+  }
+  .historyImage {
+    display: none;
+  }
+}

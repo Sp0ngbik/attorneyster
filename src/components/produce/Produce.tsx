@@ -2,6 +2,7 @@ import style from './Produce.module.scss'
 import Image from "next/image";
 import {imageObject} from "@/page/utils/imageObject";
 import React from "react";
+
 const Produce = () => {
     return (
         <section className={style.sectionProduce}>

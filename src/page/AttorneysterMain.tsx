@@ -6,6 +6,8 @@ import Image from "next/image";
 import Header from "@/layout/Header/Header";
 import Produce from "@/components/produce/Produce";
 import Description from "@/components/description/Description";
+import History from "@/components/history/History";
+import Clients from "@/components/clients/Clients";
 
 const AttorneysterMain = () => {
     return (
@@ -17,185 +19,112 @@ const AttorneysterMain = () => {
                     <Description/>
                 </div>
                 <div className={style.historyBlock}>
-                    <div className={style.historyContent}>
-                        <div className={style.leftHistory}>
-                            <h2>
-                                We Are Top Lawyers <br/> And History
-                            </h2>
-                            <Image
-                                src={imageObject.linesLeft}
-                                alt="mini logo left history not found"
-                            />
-                            <div className={style.leftBlockMainContent}>
-                                <h5>2000 – Establishment of the Company!</h5>
-                                <h6>
-                                    The origins of lawyers and the first founders of law make
-                                    their appearance in Ancient Greece and Rome.
-                                </h6>
-                                <h5>2006 – Together we Build</h5>
-                                <h6>
-                                    Lawyers in medieval times found themselves struggling to make
-                                    a living as the legal profession collapsed in the western
-                                    world.
-                                </h6>
-                                <h5>2008 – Completed 10000 cases</h5>
-                                <h6>
-                                    When did lawyers first start practicing in the United States?
-                                    It’s important to understand that the history of attorneys.
-                                </h6>
-                                <h5>2011 – We are Number One</h5>
-                                <h6>
-                                    Eventually, the prejudices against lawyers started to fall
-                                    away and the legal profession began to gain respect and power.
-                                </h6>
-                            </div>
-                        </div>
-                        <div className={style.middleHistory}>
-                            <Image src={imageObject.historyJudge} alt="judge not found"/>
-                        </div>
-                        <div className={style.rightHistory}>
-                            <h2>
-                                We Are Specialised
-                                <br/> And Experienced
-                            </h2>
-                            <Image
-                                src={imageObject.linesLeft}
-                                alt="mini logo right history not found"
-                            />
-                            <div className={style.rightBlockMainContent}>
-                                <h5>
-                                    Keep yourself up-to-date on your area of law. Be aware of new
-                                    developments, as laws and rules often change based on the
-                                    situation and new cases are being decided every day.
-                                </h5>
-                                <div className={style.historyCases}>
-                                    <div className={style.divorceCase}>
-                                        <div>Divorce And Family Cases</div>
-                                        <span>75%</span>
-                                    </div>
-                                    <div className={style.propertyCase}>
-                                        <div>Property And Construction</div>
-                                        <span>80%</span>
-                                    </div>
-                                    <div className={style.bankingCases}>
-                                        <div>Banking And Finance</div>
-                                        <span>75%</span>
-                                    </div>
-                                    <div className={style.accidentCases}>
-                                        <div>Accident and Wrongful Death</div>
-                                        <span>90%</span>
-                                    </div>
-                                </div>
-                                {/*<Link to="/consulting">*/}
-                                {/*    <button>Free Consulting</button>*/}
-                                {/*</Link>*/}
-                            </div>
-                        </div>
-                    </div>
+                    <History/>
                 </div>
-                <div className={style.clientReviews}>
-                    <div className={style.headerClientReviews}>
-                        <h2>Client Opinions & Reviews</h2>
-                        <Image
-                            src={imageObject.linesCenter}
-                            alt="width logo on reviews  not found"
-                        />
-                    </div>
-                    <div className={style.reviewsExamples}>
-                        <div>
-                            <div className={style.reviewContent}>
-                                <Image
-                                    src={imageObject.reviewsDotsLogo}
-                                    alt="reviewsDots1 not found"
-                                />
-                                <p>
-                                    Could you please thank Paul personally for me, the stars are
-                                    for his forehead. The perfect way of handling the case based
-                                    on the situation.
-                                </p>
-                            </div>
-                            <div className={style.feedBackSender}>
-                                <Image
-                                    src={imageObject.feedbackPerson1}
-                                    alt="feedback person 1 not found"
-                                />
-                                <div>
-                                    <p>Natasha</p>
-                                    <p>Private Employee</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div className={style.feedBackSenderInTop}>
-                                <Image
-                                    src={imageObject.feedbackPerson2}
-                                    alt="feedback person 2 not found"
-                                />
-                                <div>
-                                    <p>Hannah Butler</p>
-                                    <p>Business Sector</p>
-                                </div>
-                            </div>
-                            <div className={style.reviewContentInBottom}>
-                                <Image
-                                    src={imageObject.reviewsDotsLogo}
-                                    alt="reviewsDots1 not found"
-                                />
-                                <p>
-                                    Attorney law firm really helped me with all my family law and
-                                    custody issues at the right time. Words are not enough to
-                                    thank the firm.
-                                </p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className={style.reviewContent}>
-                                <Image
-                                    src={imageObject.reviewsDotsLogo}
-                                    alt="reviewsDots1 not found"
-                                />
-                                <p>
-                                    Attorney law firm really helped me with all my family law and
-                                    custody issues at the right time. Words are not enough to
-                                    thank the firm.
-                                </p>
-                            </div>
-                            <div className={style.feedBackSender}>
-                                <Image
-                                    src={imageObject.feedbackPerson3}
-                                    alt="feedback person 3 not found"
-                                />
-                                <div>
-                                    <p>Phillip Arnold</p>
-                                    <p>Bus Driver</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div className={style.feedBackSenderInTop}>
-                                <Image
-                                    src={imageObject.feedbackPerson4}
-                                    alt="feedback person 4 not found"
-                                />
-                                <div>
-                                    <p>Joshua Warren</p>
-                                    <p>Private Engineer</p>
-                                </div>
-                            </div>
-                            <div className={style.reviewContentInBottom}>
-                                <Image
-                                    src={imageObject.reviewsDotsLogo}
-                                    alt="reviewsDots1 not found"
-                                />
-                                <p>
-                                    I frequently check the Best Lawyers list to select an attorney
-                                    in areas too familiar with at the end they came and lead to
-                                    achive the justice.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {/*<div className={style.clientReviews}>*/}
+                {/*    <div className={style.clientReviewTitle}>*/}
+                {/*        <h2>Client Opinions & Reviews</h2>*/}
+                {/*        <Image*/}
+                {/*            src={imageObject.linesCenter}*/}
+                {/*            alt="width logo on reviews  not found"*/}
+                {/*        />*/}
+                {/*    </div>*/}
+                {/*    <div className={style.reviewsExamples}>*/}
+                {/*        <div>*/}
+                {/*            <div className={style.reviewContent}>*/}
+                {/*                <Image*/}
+                {/*                    src={imageObject.reviewsDotsLogo}*/}
+                {/*                    alt="reviewsDots1 not found"*/}
+                {/*                />*/}
+                {/*                <p>*/}
+                {/*                    Could you please thank Paul personally for me, the stars are*/}
+                {/*                    for his forehead. The perfect way of handling the case based*/}
+                {/*                    on the situation.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
+                {/*            <div className={style.feedBackSender}>*/}
+                {/*                <Image*/}
+                {/*                    src={imageObject.feedbackPerson1}*/}
+                {/*                    alt="feedback person 1 not found"*/}
+                {/*                />*/}
+                {/*                <div>*/}
+                {/*                    <p>Natasha</p>*/}
+                {/*                    <p>Private Employee</p>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*        <div>*/}
+                {/*            <div className={style.feedBackSenderInTop}>*/}
+                {/*                <Image*/}
+                {/*                    src={imageObject.feedbackPerson2}*/}
+                {/*                    alt="feedback person 2 not found"*/}
+                {/*                />*/}
+                {/*                <div>*/}
+                {/*                    <p>Hannah Butler</p>*/}
+                {/*                    <p>Business Sector</p>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                {/*            <div className={style.reviewContentInBottom}>*/}
+                {/*                <Image*/}
+                {/*                    src={imageObject.reviewsDotsLogo}*/}
+                {/*                    alt="reviewsDots1 not found"*/}
+                {/*                />*/}
+                {/*                <p>*/}
+                {/*                    Attorney law firm really helped me with all my family law and*/}
+                {/*                    custody issues at the right time. Words are not enough to*/}
+                {/*                    thank the firm.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*        <div>*/}
+                {/*            <div className={style.reviewContent}>*/}
+                {/*                <Image*/}
+                {/*                    src={imageObject.reviewsDotsLogo}*/}
+                {/*                    alt="reviewsDots1 not found"*/}
+                {/*                />*/}
+                {/*                <p>*/}
+                {/*                    Attorney law firm really helped me with all my family law and*/}
+                {/*                    custody issues at the right time. Words are not enough to*/}
+                {/*                    thank the firm.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
+                {/*            <div className={style.feedBackSender}>*/}
+                {/*                <Image*/}
+                {/*                    src={imageObject.feedbackPerson3}*/}
+                {/*                    alt="feedback person 3 not found"*/}
+                {/*                />*/}
+                {/*                <div>*/}
+                {/*                    <p>Phillip Arnold</p>*/}
+                {/*                    <p>Bus Driver</p>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*        <div>*/}
+                {/*            <div className={style.feedBackSenderInTop}>*/}
+                {/*                <Image*/}
+                {/*                    src={imageObject.feedbackPerson4}*/}
+                {/*                    alt="feedback person 4 not found"*/}
+                {/*                />*/}
+                {/*                <div>*/}
+                {/*                    <p>Joshua Warren</p>*/}
+                {/*                    <p>Private Engineer</p>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                {/*            <div className={style.reviewContentInBottom}>*/}
+                {/*                <Image*/}
+                {/*                    src={imageObject.reviewsDotsLogo}*/}
+                {/*                    alt="reviewsDots1 not found"*/}
+                {/*                />*/}
+                {/*                <p>*/}
+                {/*                    I frequently check the Best Lawyers list to select an attorney*/}
+                {/*                    in areas too familiar with at the end they came and lead to*/}
+                {/*                    achive the justice.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
+                <Clients/>
                 <div className={style.workersBlock}>
                     <h3>
                         Our Experienced Attorney Are Ready
@@ -351,7 +280,7 @@ const AttorneysterMain = () => {
                             <span>
                 Collaborative on low-hanging fruit to identify a ballpark value
                 added
-                <br/> activity to beta matrix economically test override the
+                <br/> activity to beta matrix economically reviewReverse override the
                 digital.
               </span>
                             <p>View more</p>
@@ -370,7 +299,7 @@ const AttorneysterMain = () => {
                                 <h3>How to Tell Who Is at Fault in a Car Accident</h3>
                                 <span>
                   Capitalize on low-hanging fruit to identify a ballpark value
-                  added matrix economically activity to beta test override the
+                  added matrix economically activity to beta reviewReverse override the
                   digital.
                 </span>
                                 <a href="#">View more</a>
@@ -386,7 +315,7 @@ const AttorneysterMain = () => {
                                 <h3>When Sue Outside of Workers’ Compensation</h3>
                                 <span>
                   Strategies on low-hanging fruit to identify a ballpark value
-                  added activity matrix economically to beta test override the
+                  added activity matrix economically to beta reviewReverse override the
                   digital.
                 </span>
                                 <a href="#">View more</a>
@@ -402,7 +331,7 @@ const AttorneysterMain = () => {
                                 <h3>Social Media Postings Lead to Defense Verdict</h3>
                                 <span>
                   Collaborative on low-hanging fruit to identify a ballpark
-                  value added activity to beta matrix economically test override
+                  value added activity to beta matrix economically reviewReverse override
                   the digital.
                 </span>
                                 <a href="#">View more</a>
@@ -418,7 +347,7 @@ const AttorneysterMain = () => {
                                 <h3>Riding solo to the rescue of her beloved nonprofits</h3>
                                 <span>
                   Podcasting on low-hanging fruit to identify a ballpark value
-                  added activity to beta test override matrix economically the
+                  added activity to beta reviewReverse override matrix economically the
                   digital.
                 </span>
                                 <a href="#">View more</a>
@@ -434,7 +363,7 @@ const AttorneysterMain = () => {
                                 <h3>Case Filed on Behalf of Injured Tugboat Worker</h3>
                                 <span>
                   Efficiently on low-hanging fruit to identify a ballpark value
-                  added activity to beta test matrix economically override the
+                  added activity to beta reviewReverse matrix economically override the
                   digital.
                 </span>
                                 <a href="#">View more</a>
@@ -450,7 +379,7 @@ const AttorneysterMain = () => {
                                 <h3>How Companies Choose Legal Representation</h3>
                                 <span>
                   Objectively on low-hanging fruit to identify a ballpark value
-                  added activity to beta matrix economically test override the
+                  added activity to beta matrix economically reviewReverse override the
                   digital.
                 </span>
                                 <a href="#">View more</a>

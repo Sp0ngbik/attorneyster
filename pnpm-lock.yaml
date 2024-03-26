@@ -809,7 +809,7 @@ packages:
       object.assign: 4.1.5
       regexp.prototype.flags: 1.5.2
       safe-array-concat: 1.1.2
-      safe-regex-test: 1.0.3
+      safe-regex-reviewReverse: 1.0.3
       string.prototype.trim: 1.2.9
       string.prototype.trimend: 1.0.8
       string.prototype.trimstart: 1.0.8
@@ -2143,7 +2143,7 @@ packages:
       isarray: 2.0.5
     dev: true
 
-  /safe-regex-test@1.0.3:
+  /safe-regex-reviewReverse@1.0.3:
     resolution: {integrity: sha512-CdASjNJPvRa7roO6Ra/gLYBTzYzzPyyBXxIMdGW3USQLyjWEls2RgW5UBTXaQVp+OrpeCK3bLem8smtmheoRuw==}
     engines: {node: '>= 0.4'}
     dependencies:

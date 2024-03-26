@@ -107,7 +107,6 @@
 
 .headerPathners h2 {
   font-family: "Cormorant Garamond", serif;
-  margin: 0;
   margin: 0 40px;
   font-size: 50px;
 }
@@ -123,224 +122,13 @@
 
 .historyBlock {
   width: 100%;
-  height: 1440px;
+  height: 100%;
   background-image: url("../assets/images/backgroundHistory.png");
   object-fit: cover;
   background-repeat: no-repeat;
-  padding: 140px 40px;
   background-size: 100%;
 }
 
-.historyContent {
-  background-color: rgba(31, 39, 50, 0.85);
-  width: 100%;
-  height: 100%;
-}
-
-.historyContent {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding: 80px 60px 70px;
-}
-
-.historyContent h2 {
-  margin: 0;
-  font-size: 45px;
-  color: #fff;
-  line-height: 58px;
-  font-family: "Cormorant Garamond", serif;
-}
-
-.leftHistory {
-  width: 418px;
-}
-
-.leftHistory img {
-  margin: 11px 0 50px;
-}
-
-.leftHistory h5 {
-  font-family: "Outfit";
-  color: #d1b06b;
-  font-size: 20px;
-}
-
-.leftHistory h6 {
-  font-family: "Outfit";
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-  margin: 13px 0 35px;
-}
-
-.rightHistory img {
-  margin: 11px 0 43px;
-}
-
-.rightBlockMainContent {
-  width: 382px;
-}
-
-.rightBlockMainContent h5 {
-  font-family: "Outfit";
-  font-size: 20px;
-  color: #fff;
-  font-weight: 400;
-}
-
-.historyCases {
-  font-family: "Outfit";
-  font-size: 20px;
-  color: #fff;
-  margin: 39px 0 50px;
-}
-
-.historyCases div {
-  display: flex;
-  margin: 0 0 30px;
-  justify-content: space-between;
-}
-
-.divorceCase:after {
-  content: "";
-  position: absolute;
-  margin: 42px 0 0 0;
-  width: 383px;
-  display: flex;
-  height: 5px;
-  background: linear-gradient(to right, #d1b06b 75%, #fff 25%);
-}
-
-.propertyCase:after {
-  content: "";
-  position: absolute;
-  margin: 42px 0 0 0;
-  width: 383px;
-  display: flex;
-  height: 5px;
-  background: linear-gradient(to right, #d1b06b 80%, #fff 20%);
-}
-
-.bankingCases:after {
-  content: "";
-  position: absolute;
-  margin: 42px 0 0 0;
-  width: 383px;
-  display: flex;
-  height: 5px;
-  background: linear-gradient(to right, #d1b06b 75%, #fff 25%);
-}
-
-.accidentCases:after {
-  content: "";
-  position: absolute;
-  margin: 42px 0 0 0;
-  width: 383px;
-  display: flex;
-  height: 5px;
-  background: linear-gradient(to right, #d1b06b 90%, #fff 10%);
-}
-
-.rightBlockMainContent button {
-  width: 302px;
-  color: #000;
-  height: 85px;
-  background-color: #d1b06b;
-  font-size: 22px;
-}
-
-.clientReviews {
-  background-color: #161d27;
-  padding: 124px 0 140px 0;
-}
-
-.headerClientReviews {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.headerClientReviews h2 {
-  color: #fff;
-  font-size: 45px;
-  font-family: "Cormorant Garamond";
-  align-items: center;
-}
-
-.headerClientReviews img {
-  width: 95px;
-}
-
-.reviewsExamples {
-  padding: 0 50px;
-  margin: 60px 0 0 0;
-  grid-gap: 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.reviewContent > p {
-  font-size: 20px;
-  margin: 33px 0 0 0;
-  color: #fff;
-  line-height: 45px;
-  font-family: "Outfit";
-  letter-spacing: 0.4px;
-}
-
-.reviewContent {
-  border-radius: 1px 1px 1px 40px;
-  background-color: #2e3947;
-  padding: 51px 51px 57px 45px;
-}
-
-.feedBackSender {
-  display: flex;
-  margin: 20px 0 0 0;
-}
-
-.feedBackSender p {
-  font-family: "Cormorant Garamond";
-  color: #fff;
-  margin: 0 0 0 22px;
-  font-size: 30px;
-}
-
-.feedBackSender p:last-child {
-  font-size: 20px;
-}
-
-.feedBackSenderInTop {
-  display: flex;
-  margin: 0 0 20px 0;
-}
-
-.feedBackSenderInTop p {
-  font-family: "Cormorant Garamond";
-  color: #fff;
-  margin: 0 0 0 22px;
-  font-size: 30px;
-}
-
-.feedBackSenderInTop p:last-child {
-  font-size: 20px;
-}
-
-.reviewContentInBottom {
-  border-radius: 40px 1px 1px 1px;
-  background-color: #2e3947;
-  padding: 51px 51px 57px 45px;
-}
-
-.reviewContentInBottom > p {
-  font-size: 20px;
-  margin: 33px 0 0 0;
-  color: #fff;
-  line-height: 45px;
-  font-family: "Outfit";
-  letter-spacing: 0.4px;
-}
 
 .workersBlock {
   display: flex;
@@ -352,7 +140,7 @@
 
 .workersBlock h3 {
   margin: 124px 0 11px;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;;
   font-size: 45px;
 }
 
@@ -381,10 +169,8 @@
 }
 
 .workersContacts {
-  margin: 0 auto;
   left: 50%;
   transform: translate(-50%, 0%);
-  justify-content: center;
   z-index: 1;
   height: 66px;
   position: absolute;
@@ -401,13 +187,13 @@
 }
 
 .workersPhoto h4 {
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;;
   font-size: 30px;
   margin: 20px 0 0 0;
 }
 
 .workersPhoto p {
-  font-family: "Outfit";
+  font-family: "Outfit", serif;;
   font-size: 20px;
   color: #d1b06b;
   padding: 0 0 131px 0;
@@ -430,7 +216,7 @@
 }
 
 .contactInformation h2 {
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;;
   line-height: 58px;
   font-size: 45px;
   margin: 0;
@@ -444,7 +230,7 @@
 }
 
 .contactInformation p {
-  font-family: "Outfit";
+  font-family: "Outfit", serif;;
   font-size: 20px;
   margin: 0;
   color: #d7d7d7;
@@ -454,7 +240,7 @@
   margin: 37px 0 0 0;
   width: 257px;
   height: 85px;
-  font-family: "Outfit";
+  font-family: "Outfit", serif;;
   color: #1f2732;
   background-color: #d1b06b;
   font-size: 22px;
@@ -476,13 +262,13 @@
 .consultationInfo h3 {
   padding: 65px 0 0 0;
   text-align: center;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;;
   font-size: 42px;
 }
 
 .consultationInfo p {
-  font-family: "Outfit";
-  font-style: 20px;
+  font-family: "Outfit", serif;;
+  font-size: 20px;
   color: #909090;
 }
 
@@ -501,7 +287,7 @@
 .callContacts p {
   margin: 0 0 0 15px;
   color: #1f2732;
-  font-family: "Outfit";
+  font-family: "Outfit", serif;;
   font-size: 18px;
 }
 
@@ -589,7 +375,7 @@
 
 .recentBlogHeader h2 {
   font-size: 45px;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;;
   color: #fff;
   margin: 0 0 11px;
 }
@@ -614,7 +400,7 @@
 
 .recentBlockRight {
   font-size: 20px;
-  font-family: "Outfit";
+  font-family: "Outfit", serif;;
   color: #d7d7d7;
   display: flex;
   flex-direction: column;
@@ -636,7 +422,7 @@
 }
 
 .recentBlockRight h3 {
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;;
   font-size: 45px;
   color: #fff;
   margin: 26px 0 21px;
@@ -644,7 +430,7 @@
 
 .recentBlockRight p {
   margin: 20px 0 0 0;
-  font-family: "Outfit";
+  font-family: "Outfit", serif;;
   color: #d1b06b;
   font-size: 22px;
   text-decoration: underline;
@@ -695,7 +481,7 @@
   color: #fff;
   margin: 26px 0 22px 0;
   font-weight: 400;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;;
 }
 
 .discriptionCorporateLaw span {
@@ -741,7 +527,7 @@
   color: #fff;
   grid-gap: 100px;
   grid-template-columns: repeat(4, 1fr);
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;;
 }
 
 .footerLinks span {
