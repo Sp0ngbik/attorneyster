@@ -1,0 +1,90 @@
+.recentBlogs {
+  background-color: #161d27;
+  padding: 139px 40px 100px 40px;
+
+  & > img {
+    width: 95px;
+    margin: 0 0 70px;
+  }
+}
+
+.recentBlogHeader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  & h2 {
+    font-size: 45px;
+    font-family: "Cormorant Garamond", serif;;
+    color: #fff;
+    margin: 0 0 11px;
+  }
+}
+
+.recentBlogContent {
+  display: flex;
+  margin: 70px 0 0 0;
+  border-bottom: 2px #4e555f;
+  grid-gap: 50px;
+
+  & img {
+    width: 100%;
+    max-width: 655px;
+  }
+}
+
+.recentBlockDescription {
+  font-size: 20px;
+  font-family: "Outfit", serif;;
+  color: #d7d7d7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & h3 {
+    font-family: "Cormorant Garamond", serif;;
+    font-size: 45px;
+    color: #fff;
+    margin: 26px 0 21px;
+  }
+
+  & p {
+    margin: 20px 0 0 0;
+    font-family: "Outfit", serif;;
+    color: #d1b06b;
+    font-size: 22px;
+    text-decoration: underline;
+    width: 110px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.recentBlogTitle {
+  padding: 0 0 28px;
+  border-bottom: 1px solid #4e555f;
+
+  & span {
+    color: #d1b06b;
+    font-size: 20px;
+  }
+}
+
+.dateSeparator {
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .recentBlogContent {
+
+    & img {
+      display: none;
+    }
+  }
+  .recentBlockDescription {
+    align-items: center;
+    margin: 0 auto;
+  }
+}
