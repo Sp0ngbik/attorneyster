@@ -67,7 +67,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className={style.footerLinksHead}>
+            <div className={style.footerCopyright}>
           <div>
             Copyright © Attorney Law | Designed by &nbsp;
             <a href="#">VictorFlow</a> -

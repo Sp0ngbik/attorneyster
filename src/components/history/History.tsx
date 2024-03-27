@@ -6,7 +6,7 @@ import Image from "next/image";
 const History = () => {
     return (
         <div className={style.historyContent}>
-            <div className={style.historyDecription}>
+            <div className={style.historyDescription}>
                 <h2>
                     We Are Top Lawyers <br/> And History
                 </h2>
