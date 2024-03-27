@@ -19,18 +19,23 @@ const Header = () => {
                         <h3>Contact Us</h3>
                     </div>
                     <div className={style.headerContactInfo}>
-                        <Image src={imageObject.callImage} alt="callimg not found"/>
-                        <div className={style.connectInfo}>
-                            <h5>Call Us On:</h5>
-                            <h6>911-987654321</h6>
+                        <div>
+                            <Image src={imageObject.callImage} alt="callimg not found"/>
+                            <div className={style.connectInfo}>
+                                <h5>Call Us On:</h5>
+                                <h6>911-987654321</h6>
+                            </div>
                         </div>
-                        <Image
-                            src={imageObject.messageFrame}
-                            alt="messageimg not found"
-                        />
-                        <div className={style.connectInfo}>
-                            <h5>Email Us On:</h5>
-                            <h6>yourmail@mail.com</h6>
+                        <div>
+
+                            <Image
+                                src={imageObject.messageFrame}
+                                alt="messageimg not found"
+                            />
+                            <div className={style.connectInfo}>
+                                <h5>Email Us On:</h5>
+                                <h6>yourmail@mail.com</h6>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -50,7 +55,7 @@ const Header = () => {
                 </div>
             </div>
         </header>
-)
+    )
 }
 
 export default Header;

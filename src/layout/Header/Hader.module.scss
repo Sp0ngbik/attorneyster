@@ -18,6 +18,10 @@
   justify-content: space-between;
   padding: 0 20px 40px;
 
+  & img {
+    width: 100%;
+  }
+
   & button {
     padding: 0 71px;
     font-size: 22px;
@@ -35,9 +39,11 @@
   height: 130px;
   margin: 0 auto;
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  & div{
-    margin: 0  auto;
+
+  & > div {
+    margin: 0 auto;
   }
 }
 
@@ -58,6 +64,11 @@
   display: flex;
   justify-content: flex-end;
 
+  > div {
+    display: flex;
+    align-items: center;
+  }
+
   & h5 {
     font-size: 18px;
     margin: 0;
@@ -70,7 +81,7 @@
   }
 
   & img {
-    margin: 0 0 0 50px;
+    margin: 0 10px 0 50px;
   }
 }
 
@@ -87,8 +98,9 @@
 }
 
 .headerDescription {
+  width: 100%;
   display: flex;
-  grid-gap: 16px;
+  gap: 16px;
   justify-content: center;
   justify-items: center;
   flex-direction: column;
@@ -115,7 +127,8 @@
 
   & button {
     background-color: #d1b06b;
-    width: 269px;
+    max-width: 269px;
+    width: 100%;
     height: 85px;
     border: none;
     font-size: 22px;
@@ -129,6 +142,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .headerInfo {
+    padding: 10px 0 0 0;
+  }
   .headerUpperBlock {
     align-items: center;
     flex-direction: column;
@@ -138,11 +154,45 @@
       margin-top: 30px;
     }
   }
-
   .linksHeader {
     display: none;
+  }
+  .headerDescription {
+    & h5 {
+      font-size: 40px;
+    }
+  }
+  .headerContactInfo {
+
+    & h5 {
+      font-size: 10px;
+    }
+
+    & h6 {
+      font-size: 15px;
+    }
+
+    & img {
+      display: flex;
+
+      margin: 0 8px;
+    }
   }
   .headerPerson {
     display: none;
   }
+}
+
+@media screen and (max-width: 500px) {
+  .headerContactInfo {
+    flex-direction: column;
+
+    > div {
+      margin: 5px 0;
+      & img{
+        max-width: 40px;;
+      }
+    }
+  }
+
 }
