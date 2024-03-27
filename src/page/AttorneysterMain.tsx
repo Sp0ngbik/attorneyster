@@ -10,6 +10,7 @@ import History from "@/components/history/History";
 import Clients from "@/components/clients/Clients";
 import Workers from "@/components/workers/Workers";
 import ContactsInformation from "@/components/contactsInformation/ContactsInformation";
+import FormForContacts from "@/components/formForContacts/FormForContacts";
 
 const AttorneysterMain = () => {
     return (
@@ -26,7 +27,8 @@ const AttorneysterMain = () => {
                 <Clients/>
                 <Workers/>
                 <ContactsInformation/>
-                {/*<div className={style.userInfoBlock}>*/}
+                <FormForContacts/>
+                {/*<div className={style.formContant}>*/}
                 {/*<Form*/}
                 {/*    onFinish={(value) => {*/}
                 {/*        const userObjInfo = {*/}
@@ -41,21 +43,21 @@ const AttorneysterMain = () => {
                 {/*    className={style.inputBlockInfo}*/}
                 {/*>*/}
                 {/*    <Form.Item name="userName">*/}
-                {/*        <Input type="useername" placeholder="Full Name*"/>*/}
+                {/*        <input type="useername" placeholder="Full Name*"/>*/}
                 {/*    </Form.Item>*/}
                 {/*    <Form.Item name="email">*/}
-                {/*        <Input type="email" placeholder="Email Adress*"/>*/}
+                {/*        <input type="email" placeholder="Email Adress*"/>*/}
                 {/*    </Form.Item>*/}
                 {/*    <Form.Item name="userPhone">*/}
-                {/*        <Input type="tel" placeholder="Phone Number"/>*/}
+                {/*        <input type="tel" placeholder="Phone Number"/>*/}
                 {/*    </Form.Item>*/}
                 {/*    <Form.Item name="userMessageSubject">*/}
-                {/*        <Input type="message" placeholder="Subject"/>*/}
+                {/*        <input type="message" placeholder="Subject"/>*/}
                 {/*    </Form.Item>*/}
                 {/*    <Form.Item className={style.textAreaItem} name="userMessageText">*/}
                 {/*        <TextArea*/}
                 {/*            name="userMessageText"*/}
-                {/*            type="Input.TextArea"*/}
+                {/*            type="input.TextArea"*/}
                 {/*            className={style.userMessage}*/}
                 {/*            placeholder="Your Message"*/}
                 {/*        />*/}

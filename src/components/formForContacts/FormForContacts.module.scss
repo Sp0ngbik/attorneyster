@@ -1,0 +1,92 @@
+.formContant {
+  position: relative;
+  background-image: url("../../assets/images/background_userInfo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 945px;
+  width: 100%;
+
+  & .inputBlockInfo {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    padding: 89px 100px;
+    max-width: 1140px;
+    width: 100%;
+    background-color: #1f2732;
+    position: absolute;
+    top: 50%;
+    height: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & button {
+      //width: 305px;
+      padding: 10px;
+      background-color: #fff;
+      margin: 0 auto;
+      font-size: 25px;
+      height: 85px;
+      border: none;
+    }
+
+    & input {
+      border: none;
+      outline: 0;
+      width: 100%;
+      border-bottom: 1px solid #3b434e;
+      color: #fff;
+      height: 87px;
+      font-size: 25px;
+      background-color: transparent;
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+    & .userMessage {
+      border: none;
+      background-color: transparent;
+      font-size: 25px;
+      border-bottom: 1px solid #3b434e;
+      color: #fff;
+      outline: 0;
+      resize: none;
+      margin: 10px 0;
+
+      &::placeholder {
+        padding: 0;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.errorMessage {
+  color: red;
+  position: absolute;
+  z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .formContant {
+    .inputBlockInfo {
+      padding: 10px 20px;
+      gap: 0;
+      & button{
+        height: 40px;
+        font-size: 15px;
+      }
+      > div {
+        flex-direction: column;
+      }
+    }
+  }
+}
