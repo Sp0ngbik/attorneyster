@@ -82,6 +82,12 @@
     font-family: "Outfit", sans-serif;
     font-size: 20px;
     font-weight: 400;
+    transition: 0.1s linear;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(22, 29, 39, 0.8);
+    }
   }
 }
 

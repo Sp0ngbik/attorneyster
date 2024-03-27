@@ -97,6 +97,10 @@
 
   & img {
     margin: 0 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 

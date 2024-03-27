@@ -60,6 +60,13 @@
     height: 85px;
     background-color: #d1b06b;
     font-size: 22px;
+    transition: 0.1s linear;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(209, 176, 107, 0.7);
+    }
   }
 }
 

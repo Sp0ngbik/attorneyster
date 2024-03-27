@@ -37,10 +37,12 @@
 
 .workerWrapper {
   position: relative;
+
   & > img {
     max-width: 100%;
     height: auto;
   }
+
   &::after {
     content: "";
     width: 108px;
@@ -69,6 +71,10 @@
   bottom: 0;
   background-color: #fff;
   border-radius: 2px;
+
+  & img {
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: 1300px) {

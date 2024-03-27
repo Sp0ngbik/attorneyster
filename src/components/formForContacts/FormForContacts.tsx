@@ -18,7 +18,7 @@ const FormForContacts = () => {
         console.log(data)
     }
     return (
-        <div className={style.formContant}>
+        <div className={style.formContants}>
             <form onSubmit={handleSubmit(onSubmit)} className={style.inputBlockInfo}>
                 <div>
 

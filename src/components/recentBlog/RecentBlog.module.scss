@@ -23,7 +23,8 @@
 
 .recentBlogContent {
   display: flex;
-  margin: 70px 0 0 0;
+  justify-content: space-between;
+  margin: 70px 0 0;
   border-bottom: 2px #4e555f;
   grid-gap: 50px;
 
