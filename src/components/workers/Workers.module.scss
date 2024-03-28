@@ -16,8 +16,9 @@
 .workersContent {
   position: relative;
   display: flex;
-  margin: 70px 0 130px 0;
+  margin: 70px auto 130px;
   gap: 30px;
+  max-width: 1440px;
   justify-content: space-between;
   width: 100%;
 

@@ -16,23 +16,23 @@ import Footer from "@/layout/Footer/Footer";
 const AttorneysterMain = () => {
     return (
         <div>
-            <Header/>
-            <main>
-                <div className={style.mainContent}>
-                    <Produce/>
-                    <Description/>
-                </div>
-                <div className={style.historyBlock}>
-                    <History/>
-                </div>
-                <Clients/>
-                <Workers/>
-                <ContactsInformation/>
-                <FormForContacts/>
-                <RecentBlog/>
-                <News/>
-            </main>
-            <Footer/>
+                <Header/>
+                <main>
+                    <div className={style.mainContent}>
+                        <Produce/>
+                        <Description/>
+                    </div>
+                    <div className={style.historyBlock}>
+                        <History/>
+                    </div>
+                    <Clients/>
+                    <Workers/>
+                    <ContactsInformation/>
+                    <FormForContacts/>
+                    <RecentBlog/>
+                    <News/>
+                </main>
+                <Footer/>
         </div>
     );
 };

@@ -22,9 +22,10 @@
 }
 
 .recentBlogContent {
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
-  margin: 70px 0 0;
+  margin: 70px auto 0;
   border-bottom: 2px #4e555f;
   grid-gap: 50px;
 
