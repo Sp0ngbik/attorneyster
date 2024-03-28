@@ -1,5 +1,5 @@
 import siteLogo from "../../assets/icons/logoName.svg";
-import callImage from "../../assets/icons/PhoneFrame.svg";
+import callImage from "../../assets/icons/phoneFrame.svg";
 import messageFrame from "../../assets/icons/messageFrame.svg";
 import linesLeft from "../../assets/icons/linesLeft.svg";
 import person from "../../assets/icons/person.svg";
